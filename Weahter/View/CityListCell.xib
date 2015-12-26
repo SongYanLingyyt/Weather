@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityListCellID" id="KGk-i7-Jjw" customClass="CityListCell" customModule="Weahter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFr-Md-rce">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="2"/>
+                        <color key="backgroundColor" red="0.80460239069999995" green="1" blue="0.56905983049999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-5/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx3-JH-twb">
+                        <rect key="frame" x="95" y="20" width="94" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ayi-es-ZR5">
+                        <rect key="frame" x="197" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Wc5-Yi-Vc1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="昆明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvM-tC-3dy">
+                        <rect key="frame" x="8" y="20" width="79" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="79" id="EUu-N3-QRZ"/>
+                            <constraint firstAttribute="width" constant="69" id="uYc-93-prL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uYc-93-prL"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ayi-es-ZR5" secondAttribute="bottom" constant="6" id="B8Z-c6-dAq"/>
+                    <constraint firstItem="WvM-tC-3dy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dwp-nS-KEM"/>
+                    <constraint firstItem="Dx3-JH-twb" firstAttribute="top" secondItem="WvM-tC-3dy" secondAttribute="top" id="YPX-bz-2Fg"/>
+                    <constraint firstItem="Dx3-JH-twb" firstAttribute="leading" secondItem="WvM-tC-3dy" secondAttribute="trailing" constant="8" symbolic="YES" id="dGm-ll-mBM"/>
+                    <constraint firstItem="Ayi-es-ZR5" firstAttribute="top" secondItem="cFr-Md-rce" secondAttribute="bottom" constant="14" id="j2o-O5-Ufa"/>
+                    <constraint firstItem="Ayi-es-ZR5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rL9-UC-ib3"/>
+                    <constraint firstItem="WvM-tC-3dy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sJ1-Q4-zTO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ayi-es-ZR5" secondAttribute="trailing" constant="15" id="v4t-zE-cZ1"/>
+                    <constraint firstItem="Ayi-es-ZR5" firstAttribute="leading" secondItem="Dx3-JH-twb" secondAttribute="trailing" constant="8" symbolic="YES" id="wxV-BB-08o"/>
+                    <constraint firstItem="Dx3-JH-twb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y41-Gf-kdC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityNmLab" destination="WvM-tC-3dy" id="TYu-Nt-cU6"/>
+                <outlet property="iconImageView" destination="Ayi-es-ZR5" id="LaJ-28-fE7"/>
+                <outlet property="temperatureLab" destination="Dx3-JH-twb" id="iY2-Xr-foR"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="327"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Xcode 7.0">
+    <entity name="Citys" representedClassName="Citys" syncable="YES">
+        <attribute name="cityid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citynm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weaid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherIcon" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Citys" positionX="-261" positionY="183" width="128" height="133"/>
+    </elements>
+</model>
